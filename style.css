@@ -59,8 +59,10 @@ ul li {
     width: 28px;
     cursor: pointer;
     position: absolute;
-    top: 1.9rem;
-    right: 2.5rem;
+    /* top: 1.9rem; */
+    top: 24px;
+    /* right: 2.5rem; */
+    right: 30px;
     z-index: 2;
 }
 
@@ -79,6 +81,7 @@ ul li {
 
 .change .two {
     opacity: 0;
+    background-color: white;
 }
 
 .change .three {
