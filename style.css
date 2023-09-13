@@ -25,31 +25,23 @@ header {
 ul {
     /* border: 2px solid orangered; */
     list-style-type: none;
-    /* top: 10rem; */
-    /* right: -30rem; */
     opacity: 0;
-
     font-family: 'Lato', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
-    /* float: right; */
+    font-family: 'Raleway', sans-serif;
     transition: all 0.5s ease-out 0.4s;
     text-transform: uppercase;
-
-    /* background: 0; */
     font-weight: 800;
-    /* font-size: 1.0625rem; */
-}
+} 
 
 ul a {
     color: white;
     text-decoration: none;
-    
 }
 
 ul li {
     /* border: 2px solid orange; */
     padding: 0.5rem;
-    /* margin-left: 3rem; */
+    margin-left: -1.5rem;
 }
 
 /* Right Side Cross */
