@@ -7,6 +7,21 @@
   box-sizing: border-box;
 }
 
+/* header:before, 
+header:after,
+.wrap:before,
+.wrap:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+header:after,
+.wrap:after {
+	clear: both;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -28,10 +43,10 @@ ul {
     opacity: 0;
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     transition: all 0.5s ease-out 0.4s;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 500;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 } 
@@ -123,7 +138,7 @@ main {
     }
 
     .btn {
-        top: 2rem;
+        top: 1.8rem;
         right: 2.5rem;
     }
 
@@ -135,10 +150,11 @@ main {
         /* opacity: 0; */
         /* background: 0; */
         position: relative;
-        padding-bottom: 2rem;
+        /* padding-bottom: 2rem; */
         /* width: 40rem; */
         margin-left: 5rem;
         padding-top: 0;
+        padding-bottom: 0;
     }
 
     ul li {
