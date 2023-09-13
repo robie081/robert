@@ -23,7 +23,7 @@ header {
 }
 
 ul {
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     list-style-type: none;
     opacity: 0;
     font-family: 'Lato', sans-serif;
@@ -32,6 +32,7 @@ ul {
     text-transform: uppercase;
     font-weight: 800;
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 } 
 
 ul a {
@@ -126,7 +127,7 @@ main {
     }
 
     ul {
-        border: 2px solid orangered;
+        /* border: 2px solid orangered; */
         /* top: .1em; */
         right: -30em;
         /* width: 30em; */
@@ -140,7 +141,7 @@ main {
     }
 
     ul li {
-        border: 2px solid black;
+        /* border: 2px solid black; */
         float: left;
         width: 20%;
         margin: 0rem 1rem;
