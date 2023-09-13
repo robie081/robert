@@ -23,7 +23,7 @@ header {
 }
 
 ul {
-    /* border: 2px solid orangered; */
+    border: 2px solid orangered;
     list-style-type: none;
     opacity: 0;
     font-family: 'Lato', sans-serif;
@@ -31,6 +31,7 @@ ul {
     transition: all 0.5s ease-out 0.4s;
     text-transform: uppercase;
     font-weight: 800;
+    padding-top: 1.5rem;
 } 
 
 ul a {
@@ -52,9 +53,9 @@ ul li {
     cursor: pointer;
     position: absolute;
     /* top: 1.9rem; */
-    top: 24px;
+    top: 1.5rem;
     /* right: 2.5rem; */
-    right: 30px;
+    right: 1.875rem;
     z-index: 2;
 }
 
@@ -119,8 +120,13 @@ main {
         background-color: lightgreen;
     }
 
+    .btn {
+        top: 2rem;
+        right: 2.5rem;
+    }
+
     ul {
-        /* border: 2px solid orangered; */
+        border: 2px solid orangered;
         /* top: .1em; */
         right: -30em;
         /* width: 30em; */
@@ -130,18 +136,24 @@ main {
         padding-bottom: 2rem;
         /* width: 40rem; */
         margin-left: 5rem;
+        padding-top: 0;
     }
 
     ul li {
-        /* border: 2px solid plum; */
+        border: 2px solid black;
         float: left;
         width: 20%;
-        /* margin: 0; */
+        margin: 0rem 1rem;
+        padding: 5px;
         /* padding: 0; */
         /* padding-top: 2px; */
         /* border: 0 none; */
         text-align: center;
         text-indent: 0;
+    }
+
+    ul li:first-child {
+        margin-left: -1rem;
     }
 
     .position {
