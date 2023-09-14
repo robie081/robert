@@ -26,7 +26,7 @@ header {
     right: 0;
     padding: 0.8em 1.6em;
     transition: all 0.5s ease-out 0.4s;
-    width: 100%;
+    /* width: 100%; */
 }
 
 ul {
@@ -132,13 +132,16 @@ main {
     }
 
     header {
+        border: 3px solid black;
+        border-radius: 5px;
+        /* min-width: 1042px; */
         width: 100%;
     }
 
-    .btn {
+    /* .btn {
         top: 2rem;
         right: 2.5rem;
-    }
+    } */
 
     ul {
         /* border: 2px solid orangered; */
