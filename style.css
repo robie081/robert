@@ -131,6 +131,10 @@ main {
         background-color: lightgreen;
     }
 
+    header {
+        width: 100%;
+    }
+
     .btn {
         top: 2rem;
         right: 2.5rem;
