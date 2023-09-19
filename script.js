@@ -17,10 +17,27 @@ btn.addEventListener('click', () => {
     ul.classList.toggle('open');
 });
 
+// Sticky Menu
+
+// window.onscroll = function() {
+//     myFunction();
+// } 
+
+// const navBar = document.getElementById('navbar');
+// const sticky = navBar.offsetTop;
+
+// function myFunction() {
+//     if (window.pageYOffset >= sticky) {
+//         navBar.classList.add('sticky');
+//     } else {
+//         navBar.classList.remove('sticky');
+//     }
+// }
+
 // Toggle Initial Top
 
-const main = document.querySelector('main');
+// const main = document.querySelector('main');
 
-btn.addEventListener('click', () => {
-    main.classList.toggle('position');
-});
+// btn.addEventListener('click', () => {
+//     main.classList.toggle('position');
+// });

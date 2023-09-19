@@ -1,4 +1,6 @@
 
+/* Hamburger 1 */
+
 *,
 *::before,
 *::after {
@@ -7,67 +9,24 @@
   box-sizing: border-box;
 }
 
-html {
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 header {
     /* border: 3px solid black; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0.8em 1.6em;
-    transition: all 0.5s ease-out 0.4s;
-    /* width: 100%; */
 }
 
-ul {
-    /* border: 2px solid orangered; */
-    list-style-type: none;
-    opacity: 0;
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* font-size: 1rem; */
-    transition: all 0.5s ease-out 0.4s;
-    /* text-transform: uppercase; */
-    font-weight: 600;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1.125rem;
-} 
-
-ul a {
-    color: white;
-    text-decoration: none;
-}
-
-ul li {
-    /* border: 2px solid orange; */
-    padding: 0.5rem;
-    margin-left: -1.5rem;
+nav {
+    /* border: 3px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 /* Right Side Cross */
 
 .btn {
+    align-self: flex-end;
     height: 28px;
     width: 28px;
     cursor: pointer;
-    position: absolute;
-    /* top: 1.9rem; */
-    top: 1.5rem;
-    /* right: 2.5rem; */
-    right: 1.875rem;
-    z-index: 2;
 }
 
 .btn div {
@@ -85,12 +44,36 @@ ul li {
 
 .change .two {
     opacity: 0;
-    background-color: white;
 }
 
 .change .three {
     transform: rotate(-45deg) translate(7px, -8px);
     background-color: white;
+}
+
+ul {
+    /* border: 2px solid orangered; */
+    display: none;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    transition: all 0.5s ease-out 0.4s;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 1.1875rem;
+    /* font-size: 1.25rem; */
+    letter-spacing: 1px;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+ul li {
+    /* border: 2px solid orange; */
+    padding: 0.5rem;
 }
 
 /* Menu */
@@ -101,28 +84,11 @@ header.open {
 
 ul.open {
     right: 0;
-    opacity: 1;
-}
-
-/* Toggle Initial Top */
-
-.initial {
-    position: relative;
-    top: 6rem;
-    transition: all 0.5s ease-out 0.4s;
-}
-
-.position {
-    /* display: none; */
-    position: relative;
-    top: 13rem;
-    
+    display: block;
 }
 
 main {
     /* border: 3px solid plum; */
-    margin: 0;
-    padding: 0;
 }
 
 @media only screen and (orientation: landscape) {
@@ -131,53 +97,23 @@ main {
         background-color: whitesmoke;
     }
 
-    header {
-        border-radius: 5px;
-    }
-
-    .btn {
-        top: 2rem;
-        right: 2.5rem;
+    nav {
+        /* flex-direction: row; */
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     ul {
         /* border: 2px solid orangered; */
-        /* top: .1em; */
-        right: -30em;
-        /* width: 30em; */
-        /* opacity: 0; */
-        /* background: 0; */
-        position: relative;
-        /* padding-bottom: 2rem; */
-        /* width: 40rem; */
-        margin-left: 5rem;
-        padding-top: 0;
-        padding-bottom: 0;
+        display: flex;
+        flex-direction: row;
+
     }
 
     ul li {
-        /* border: 2px solid black; */
-        /* float: left; */
-        display: inline-block;
-        width: 20%;
-        margin: 0rem 1rem;
-        padding: 5px;
-        /* padding: 0; */
-        /* padding-top: 2px; */
-        /* border: 0 none; */
+        border: 2px solid plum;
         text-align: center;
-        text-indent: 0;
-    }
-
-    ul li:first-child {
-        margin-left: -1rem;
-    }
-
-    .position {
-        /* display: none; */
-        position: relative;
-        top: 9rem;
-        
+        /* text-indent: 0; */
     }
 }
 
@@ -187,18 +123,10 @@ main {
         background-color: lightcoral;
     }
 
-    header {
-        border-radius: 0;
-    }
-
     ul {
-        margin-left: 15rem;
+        /* margin-left: 15rem; */
         /* max-width: 40rem; */
     }
-
-    .btn:hover {
-        opacity: 0.8;
-    } 
 }
 
 
