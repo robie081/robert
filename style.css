@@ -44,6 +44,7 @@ nav {
 
 .change .two {
     opacity: 0;
+    background-color: white;
 }
 
 .change .three {
