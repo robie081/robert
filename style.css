@@ -101,8 +101,7 @@ main {
     /* border: 3px solid plum; */
 }
 
-/* @media only screen and (orientation: landscape) { */
-@media only screen and (min-width: 500px) {
+@media only screen and (orientation: landscape) {
     
     body {
         background-color: lightblue;
@@ -136,7 +135,7 @@ main {
     }
 
     ul li {
-        margin: 0 1rem 0 1rem;
+        margin: 0 0.5rem 0 0.5rem;
     }
 
     ul.open {
@@ -145,7 +144,17 @@ main {
     }
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 900px) {
+    
+    body {
+        background-color: lightgreen;
+    }
+
+    ul li {
+        margin: 0 1rem 0 1rem;
+    }
+}
+@media screen and (min-width: 1152px) {
     
     body {
         background-color: lightcoral;
