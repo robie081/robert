@@ -63,8 +63,8 @@ ul {
     /* border: 2px solid orangered; */
     display: none;
     list-style-type: none;
-    /* font-family: 'Lato', sans-serif; */
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     transition: all 0.5s ease-out 0.4s;
     padding: 1rem;
     font-weight: 600;
