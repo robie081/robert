@@ -1,5 +1,5 @@
 
-/* Hamburger 1 */
+/* menus experiment script1.css hamburger 1 */
 
 *,
 *::before,
@@ -9,24 +9,32 @@
   box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 header {
     /* border: 3px solid black; */
+    padding: 1rem;
 }
 
 nav {
     /* border: 3px solid firebrick; */
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 /* Right Side Cross */
 
 .btn {
-    align-self: flex-end;
     height: 28px;
     width: 28px;
     cursor: pointer;
+    z-index: 2;
+    align-self: flex-end;
 }
 
 .btn div {
@@ -66,16 +74,17 @@ ul {
     letter-spacing: 1px;
 }
 
-ul a {
-    color: white;
-    text-decoration: none;
-    
-}
-
 ul li {
     /* border: 2px solid orange; */
     padding: 0.5rem;
 }
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 /* Menu */
 
@@ -98,28 +107,34 @@ main {
         background-color: whitesmoke;
     }
 
+    header {
+        transition: all 0.5s ease-out 0.4s;
+    }
+
     nav {
         /* flex-direction: row; */
         flex-direction: row-reverse;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 
     .btn {
         align-self: center;
     }
 
+    ul {
+        /* border: 2px solid plum; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        right: -100rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+
     ul.open {
         /* border: 2px solid gold; */
         display: flex;
-        margin: 0 auto;
-        /* right: -30em; */
-    }
-
-    ul li {
-        /* border: 2px solid plum; */
-        text-align: center;
-        margin: 0 1rem 0 1rem;
-        padding: 0 1rem 0 1rem;
     }
 }
 
@@ -130,7 +145,7 @@ main {
     }
 
     ul {
-        /* margin-left: 15rem; */
+        margin-left: 15rem;
         /* max-width: 40rem; */
     }
 }
