@@ -128,7 +128,7 @@ main {
         justify-content: space-around;
         position: relative;
         right: -100rem;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -142,11 +142,6 @@ main {
     
     body {
         background-color: lightcoral;
-    }
-
-    ul {
-        margin-left: 15rem;
-        /* max-width: 40rem; */
     }
 }
 
