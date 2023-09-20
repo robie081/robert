@@ -102,7 +102,7 @@ main {
 }
 
 /* @media only screen and (orientation: landscape) { */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     
     body {
         background-color: lightblue;
