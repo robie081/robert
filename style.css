@@ -1,5 +1,6 @@
 
-/* menus experiment script1.css hamburger 1 */
+
+/* menus -- experiment -- script2.css slim hamburger with bg */
 
 *,
 *::before,
@@ -24,29 +25,27 @@ nav {
     /* border: 3px solid firebrick; */
     display: flex;
     flex-direction: column;
-    /* padding: 1rem; */
 }
 
 /* Right Side Cross */
 
 .btn {
-    height: 28px;
-    width: 28px;
+    height: 26px;
+    width: 26px;
     cursor: pointer;
     z-index: 2;
     align-self: flex-end;
 }
 
 .btn div {
-    height: 5px;
+    height: 4px;
     background: #1450A3;
     margin: 4px auto;
     border-radius: 4px;
-    /* transition: all 0.3s; */
 }
 
 .change .one {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 4px);
     background-color: white;
 }
 
@@ -56,7 +55,7 @@ nav {
 }
 
 .change .three {
-    transform: rotate(-45deg) translate(7px, -8px);
+    transform: rotate(-45deg) translate(7px, -7px);
     background-color: white;
 }
 
@@ -64,13 +63,12 @@ ul {
     /* border: 2px solid orangered; */
     display: none;
     list-style-type: none;
-    font-family: 'Lato', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Raleway', sans-serif;
     transition: all 0.5s ease-out 0.4s;
     padding: 1rem;
-    font-weight: 800;
-    font-size: 1.1875rem;
-    /* font-size: 1.25rem; */
+    font-weight: 600;
+    font-size: 1.125rem;
     letter-spacing: 1px;
 }
 
@@ -83,8 +81,6 @@ ul li a {
     color: white;
     text-decoration: none;
 }
-
-
 
 /* Menu */
 
@@ -112,9 +108,7 @@ main {
     }
 
     nav {
-        /* flex-direction: row; */
         flex-direction: row-reverse;
-        /* justify-content: space-between; */
     }
 
     .btn {
@@ -164,6 +158,154 @@ main {
         margin: 0 2rem 0 2rem;
     }
 }
+
+/* menus experiment script1.css hamburger fat with bg */
+
+/* *,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+/* html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+/* header {
+    padding: 1rem;
+} */
+
+/* nav {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Right Side Cross */
+
+/* .btn {
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    z-index: 2;
+    align-self: flex-end;
+} */
+
+/* .btn div {
+    height: 5px;
+    background: #1450A3;
+    margin: 4px auto;
+    border-radius: 4px;
+} */
+
+/* .change .one {
+    transform: rotate(45deg) translate(5px, 5px);
+    background-color: white;
+} */
+
+/* .change .two {
+    opacity: 0;
+    background-color: white;
+} */
+
+/* .change .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+    background-color: white;
+} */
+
+/* ul {
+    display: none;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* transition: all 0.5s ease-out 0.4s;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 1.1875rem;
+    letter-spacing: 1px;
+} */
+
+/* ul li {
+    padding: 0.5rem;
+} */
+
+/* ul li a {
+    color: white;
+    text-decoration: none;
+} */
+
+/* Menu */
+
+/* header.open {
+    background: #6375FF;
+} */
+
+/* ul.open {
+    right: 0;
+    display: block;
+} */
+
+/* @media only screen and (orientation: landscape) {
+    
+    body {
+        background-color: lightblue;
+    }
+
+    header {
+        transition: all 0.5s ease-out 0.4s;
+    }
+
+    nav {
+        flex-direction: row-reverse;
+    }
+
+    .btn {
+        align-self: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        right: -100rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ul li {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+    ul.open {
+        display: flex;
+    }
+} */
+
+/* @media screen and (min-width: 900px) {
+    
+    body {
+        background-color: lightgreen;
+    }
+
+    ul li {
+        margin: 0 1rem 0 1rem;
+    }
+} */
+
+/* @media screen and (min-width: 1152px) {
+    
+    body {
+        background-color: lightcoral;
+    }
+
+    ul li {
+        margin: 0 2rem 0 2rem;
+    }
+} */
 
 
 
