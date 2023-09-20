@@ -1,6 +1,7 @@
 
 
-/* menus -- experiment -- script2.css slim hamburger with bg */
+/* menus -- leszekLike -- script2.css slim hamburger with bg */
+/* menus -- leszekLike -- script3.css slim hamburger without bg */
 
 *,
 *::before,
@@ -19,6 +20,7 @@ html {
 header {
     /* border: 3px solid black; */
     padding: 1rem;
+    transition: all 0.5s ease-out 0.4s;
 }
 
 nav {
@@ -39,14 +41,16 @@ nav {
 
 .btn div {
     height: 4px;
-    background: #1450A3;
+    /* background: #1450A3; */
+    background: royalblue;
     margin: 4px auto;
     border-radius: 4px;
 }
 
 .change .one {
     transform: rotate(45deg) translate(5px, 4px);
-    background-color: white;
+    /* background-color: white; */
+    background-color: royalblue;
 }
 
 .change .two {
@@ -56,7 +60,8 @@ nav {
 
 .change .three {
     transform: rotate(-45deg) translate(7px, -7px);
-    background-color: white;
+    /* background-color: white; */
+    background-color: royalblue;
 }
 
 ul {
@@ -67,6 +72,7 @@ ul {
     /* font-family: 'Raleway', sans-serif; */
     transition: all 0.5s ease-out 0.4s;
     padding: 1rem;
+    /* font-weight: 500; */
     font-weight: 600;
     font-size: 1.125rem;
     letter-spacing: 1px;
@@ -78,14 +84,16 @@ ul li {
 }
 
 ul li a {
-    color: white;
+    /* color: white; */
+    color: royalblue;
     text-decoration: none;
 }
 
 /* Menu */
 
 header.open {
-    background: #6375FF;
+    /* background: #6375FF; */
+    background: white;
 }
 
 ul.open {
@@ -100,7 +108,7 @@ main {
 @media only screen and (orientation: landscape) {
     
     body {
-        background-color: lightblue;
+        background-color: whitesmoke;
     }
 
     header {
