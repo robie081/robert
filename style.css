@@ -42,7 +42,7 @@ nav {
     background: #1450A3;
     margin: 4px auto;
     border-radius: 4px;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .change .one {
