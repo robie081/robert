@@ -73,8 +73,7 @@ ul {
     transition: all 0.5s ease-out 0.4s;
     padding: 1rem;
     /* font-weight: 500; */
-    font-weight: 500;
-    /* font-size: 1.125rem; */
+    font-weight: 600;
     font-size: 1.1875rem;
     /* font-size: 1.25rem; */
     letter-spacing: 1px;
@@ -136,6 +135,7 @@ main {
         /* width: 70%; */
         width: 100%;
         margin: 0 auto;
+        font-size: 1.125rem;
     }
 
     ul li {
