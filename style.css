@@ -42,7 +42,7 @@ nav {
 .btn div {
     height: 4px;
     /* background: #1450A3; */
-    background: #0C356A;
+    background: #337CCF;
     margin: 4px auto;
     border-radius: 4px;
 }
@@ -50,7 +50,7 @@ nav {
 .change .one {
     transform: rotate(45deg) translate(5px, 4px);
     /* background-color: white; */
-    background-color: #0C356A;
+    background-color: #337CCF;
 }
 
 .change .two {
@@ -61,7 +61,7 @@ nav {
 .change .three {
     transform: rotate(-45deg) translate(7px, -7px);
     /* background-color: white; */
-    background-color: #0C356A;
+    background-color: #337CCF;
 }
 
 ul {
@@ -73,10 +73,10 @@ ul {
     transition: all 0.5s ease-out 0.4s;
     padding: 1rem;
     /* font-weight: 500; */
-    font-weight: 600;
+    font-weight: 500;
     /* font-size: 1.125rem; */
-    /* font-size: 1.1875rem; */
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
+    /* font-size: 1.25rem; */
     letter-spacing: 1px;
 }
 
@@ -87,7 +87,7 @@ ul li {
 
 ul li a {
     /* color: white; */
-    color: #0C356A;
+    color: #337CCF;
     text-decoration: none;
 }
 
