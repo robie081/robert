@@ -3,9 +3,7 @@
 /* menus -- leszekLike -- script2.css slim hamburger with bg */
 /* menus -- leszekLike -- script3.css slim hamburger without bg */
 
-*,
-*::before,
-*::after {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -17,8 +15,16 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Grid Mobile Portrait */
+
+body {
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 header {
-    /* border: 3px solid black; */
+    /* border: 3px solid plum; */
     padding: 1rem;
     transition: all 0.5s ease-out 0.4s;
 }
@@ -45,6 +51,7 @@ nav {
     background: #337CCF;
     margin: 4px auto;
     border-radius: 4px;
+    /* transition: all 0.3s; */
 }
 
 .change .one {
@@ -117,11 +124,20 @@ main {
     }
 
     nav {
+        /* border: 2px solid orange; */
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .btn {
+        /* border: 2px solid plum; */
         align-self: center;
+    }
+
+    .navbar {
+        /* border: 2px solid lightblue; */
+        margin: 0 auto;
+    
     }
 
     ul {
@@ -152,6 +168,10 @@ main {
     
     body {
         background-color: lightgreen;
+    }
+
+    .btn {
+        display: none;
     }
 
     ul li {

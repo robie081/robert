@@ -17,6 +17,8 @@ btn.addEventListener('click', () => {
     ul.classList.toggle('open');
 });
 
+// Sticky Menu GPT
+
 // Sticky Menu
 
 // window.onscroll = function() {
