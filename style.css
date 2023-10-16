@@ -166,7 +166,7 @@ main div {
 
     header {
         /* transition: all 0.5s ease-out 0.4s; */
-        /* padding: 0; */
+        /* padding: 2rem 0 2rem 0; */
     }
 
     nav {
@@ -214,8 +214,23 @@ main div {
 
 @media screen and (min-width: 900px) {
     
+    /* Desktop Grid */
+
     body {
-        background-color: lightgreen;
+        display: grid;
+        grid-template-columns: 1fr minmax(80%, 90%) 1fr;
+    }
+    
+    header, nav, main, footer {
+        grid-column: 2 / 3;
+    }
+
+    body {
+        /* background-color: lightgreen; */
+    }
+
+    header {
+        padding: 3rem 0 3rem 0;
     }
 
     .btn {
@@ -227,13 +242,53 @@ main div {
     }
 
     ul li {
+        /* border: 2px solid orange; */
         margin: 0 1rem 0 1rem;
+        padding: 2px 8px 2px 8px;
     }
 
     ul li a:hover {
-        color: darkslategray;
+        color: #1e40af;
     }
+
+    /* Vertical Bars in Front of Menu Items */
+
+    li {
+        /* Create a stacking context */
+        position: relative; 
+        /* Adjust as needed for the width of the vertical bar */
+        /* padding: 0;  */
+    }
+
+    li::before {
+        /* Create an empty pseudo-element */
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* Adjust the width of the vertical bar */
+        width: 3px; 
+        /* Vertical bar covers the entire height of the <li> */
+        height: 100%; 
+        /* Initially set the bar as transparent */
+        background-color: transparent; 
+        /* Add a transition effect for hover */
+        transition: background-color 0.3s; 
+    }
+
+    /* Show the vertical bar on hover */
+    li:hover::before {
+        /* Change the color on hover */
+        background-color: #d1d5db; 
+    }
+
+    li.active::before {
+        background-color: #337CCF;
+    }
+
 }
+
+
 @media screen and (min-width: 1152px) {
     
     body {
