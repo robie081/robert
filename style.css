@@ -11,6 +11,7 @@
 
 html {
     -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +27,9 @@ body {
 header {
     /* border: 3px solid plum; */
     padding: 1rem;
-    transition: all 0.5s ease-out 0.4s;
+    /* transition: all 0.5s ease-out 0.4s; */
+    /* background-color: #eff6ff; */
+    background-color: #f0f9ff;
 }
 
 nav {
@@ -51,7 +54,7 @@ nav {
     background: #337CCF;
     margin: 4px auto;
     border-radius: 4px;
-    /* transition: all 0.3s; */
+    transition: all 0.3s;
 }
 
 .change .one {
@@ -77,7 +80,7 @@ ul {
     list-style-type: none;
     font-family: 'Lato', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
-    transition: all 0.5s ease-out 0.4s;
+    /* transition: all 0.5s ease-out 0.4s; */
     padding: 1rem;
     /* font-weight: 500; */
     font-weight: 600;
@@ -101,7 +104,8 @@ ul li a {
 
 header.open {
     /* background: #6375FF; */
-    background: white;
+    /* background: white; */
+    background-color: #eff6ff;
 }
 
 ul.open {
@@ -110,17 +114,54 @@ ul.open {
 }
 
 main {
-    /* border: 3px solid plum; */
+    border: 3px solid plum;
+    display: flex;
+    flex-direction: column;
+}
+
+main div {
+    border: 2px solid black;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    border: 2px solid red;
+    width: 10rem;
+    height: 11rem;
+}
+
+/* img {
+    margin: 0 auto;
+} */
+
+.robert {
+    border-radius: 10px;
+    padding: 0.5em;
+    filter: grayscale(90%);
+    filter: opacity(70%);
+    /* margin: 0 auto; */
+}
+
+.projects {
+    height: 5rem;
 }
 
 @media only screen and (orientation: landscape) {
     
-    body {
-        background-color: whitesmoke;
-    }
+    /* Grid Mobile Landscape */
+
+    /* body {
+        border: 3px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
 
     header {
-        transition: all 0.5s ease-out 0.4s;
+        /* transition: all 0.5s ease-out 0.4s; */
     }
 
     nav {
