@@ -65,7 +65,8 @@ nav {
 
 .change .two {
     opacity: 0;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #eff6ff;
 }
 
 .change .three {
