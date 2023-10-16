@@ -33,7 +33,7 @@ header {
     padding: 1rem;
     /* transition: all 0.5s ease-out 0.4s; */
     /* background-color: #eff6ff; */
-    background-color: #f0f9ff;
+    /* background-color: #f0f9ff; */
 }
 
 nav {
@@ -69,8 +69,8 @@ nav {
 
 .change .two {
     opacity: 0;
-    /* background-color: white; */
-    background-color: #eff6ff;
+    background-color: white;
+    /* background-color: #eff6ff; */
 }
 
 .change .three {
@@ -110,7 +110,7 @@ ul li a {
 header.open {
     /* background: #6375FF; */
     /* background: white; */
-    background-color: #eff6ff;
+    /* background-color: #eff6ff; */
 }
 
 ul.open {
