@@ -1,8 +1,4 @@
 
-
-/* menus -- leszekLike -- script2.css slim hamburger with bg */
-/* menus -- leszekLike -- script3.css slim hamburger without bg */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -119,6 +115,7 @@ ul.open {
 
 
 
+
 main {
     border: 3px solid plum;
     display: flex;
@@ -127,6 +124,10 @@ main {
 
 main div {
     border: 2px solid black;
+}
+
+.intro {
+    background-color: #eff6ff;
 }
 
 .photo {
@@ -192,13 +193,6 @@ main div {
 
     ul {
         /* border: 2px solid plum; */
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* justify-content: space-around; */
-        /* justify-content: center; */
-        /* position: relative; */
-        /* right: -100rem; */
-        /* width: 70%; */
         width: 100%;
         margin: 0 auto;
         font-size: 1.125rem;
@@ -212,7 +206,6 @@ main div {
     ul.open {
         /* border: 2px solid gold; */
         display: flex;
-        /* display: block; */
     }
 }
 
@@ -229,9 +222,9 @@ main div {
         grid-column: 2 / 3;
     }
 
-    body {
-        /* background-color: lightgreen; */
-    }
+    /* body {
+        background-color: lightgreen;
+    } */
 
     header {
         padding: 3rem 0 3rem 0;
@@ -247,48 +240,59 @@ main div {
 
     ul li {
         /* border: 2px solid orange; */
-        margin: 0 1rem 0 1rem;
+        /* Before pseudo-element */
+        margin: 0 2rem;
         padding: 2px 8px 2px 8px;
+
+        /* After pseudo-element */
+        /* margin: 0 2rem;
+        padding: 0; */
+        
     }
 
-    ul li a:hover {
-        /* color: #1e40af; */
-    }
+    /* ul li a:hover {
+        color: #1e40af;
+    } */
 
-    /* Vertical Bars in Front of Menu Items */
+    /* Vertical Bar in Front of Menu Items */
 
     li {
-        /* Create a stacking context */
+        /* border: 2px solid green; */
         position: relative; 
-        /* Adjust as needed for the width of the vertical bar */
-        /* padding: 0;  */
     }
 
-    li::before {
-        /* Create an empty pseudo-element */
+    li::before { 
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px; 
+    height: 100%; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+
+    /* li::after {
         content: ''; 
+        display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        /* Adjust the width of the vertical bar */
-        width: 3px; 
-        /* Vertical bar covers the entire height of the <li> */
-        height: 100%; 
-        /* Initially set the bar as transparent */
-        background-color: transparent; 
-        /* Add a transition effect for hover */
+        width: 100%; 
+        height: 2px; 
+        bottom: -8px;
         transition: background-color 0.3s; 
-    }
+    } */
 
-    /* Show the vertical bar on hover */
     li:hover::before {
-        /* Change the color on hover */
-        background-color: #d1d5db; 
-    }
-
-    li.active::before {
         background-color: #337CCF;
     }
+    
+    /* li:hover::after {
+        background-color: #337CCF;
+    } */
+
+    /* li.active::before {
+        background-color: #337CCF;
+    } */
 
     /* Main */
 
@@ -332,162 +336,13 @@ main div {
     }
 
     ul li {
-        margin: 0 2rem 0 2rem;
+        margin: 0 3rem;
     }
 
     .projects {
         width: 500px;
     }
 }
-
-/* menus experiment script1.css hamburger fat with bg */
-
-/* *,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-} */
-
-/* html {
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
-/* header {
-    padding: 1rem;
-} */
-
-/* nav {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* Right Side Cross */
-
-/* .btn {
-    height: 28px;
-    width: 28px;
-    cursor: pointer;
-    z-index: 2;
-    align-self: flex-end;
-} */
-
-/* .btn div {
-    height: 5px;
-    background: #1450A3;
-    margin: 4px auto;
-    border-radius: 4px;
-} */
-
-/* .change .one {
-    transform: rotate(45deg) translate(5px, 5px);
-    background-color: white;
-} */
-
-/* .change .two {
-    opacity: 0;
-    background-color: white;
-} */
-
-/* .change .three {
-    transform: rotate(-45deg) translate(7px, -8px);
-    background-color: white;
-} */
-
-/* ul {
-    display: none;
-    list-style-type: none;
-    font-family: 'Lato', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
-    /* transition: all 0.5s ease-out 0.4s;
-    padding: 1rem;
-    font-weight: 800;
-    font-size: 1.1875rem;
-    letter-spacing: 1px;
-} */
-
-/* ul li {
-    padding: 0.5rem;
-} */
-
-/* ul li a {
-    color: white;
-    text-decoration: none;
-} */
-
-/* Menu */
-
-/* header.open {
-    background: #6375FF;
-} */
-
-/* ul.open {
-    right: 0;
-    display: block;
-} */
-
-/* @media only screen and (orientation: landscape) {
-    
-    body {
-        background-color: lightblue;
-    }
-
-    header {
-        transition: all 0.5s ease-out 0.4s;
-    }
-
-    nav {
-        flex-direction: row-reverse;
-    }
-
-    .btn {
-        align-self: center;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-        right: -100rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    ul li {
-        margin: 0 0.5rem 0 0.5rem;
-    }
-
-    ul.open {
-        display: flex;
-    }
-} */
-
-/* @media screen and (min-width: 900px) {
-    
-    body {
-        background-color: lightgreen;
-    }
-
-    ul li {
-        margin: 0 1rem 0 1rem;
-    }
-} */
-
-/* @media screen and (min-width: 1152px) {
-    
-    body {
-        background-color: lightcoral;
-    }
-
-    ul li {
-        margin: 0 2rem 0 2rem;
-    }
-} */
-
 
 
 /* Left Side Cross */
