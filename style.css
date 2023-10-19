@@ -120,38 +120,110 @@ main {
     border: 3px solid plum;
     display: flex;
     flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
 }
 
 main div {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    /* margin-top: 2rem; */
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
 }
 
 .intro {
-    background-color: #eff6ff;
+    /* background-color: #eff6ff; */
+    margin: 2rem 0;
+    padding: 1rem;
+    line-height: 1.8rem;
+    
+    
+}
+
+.intro h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #337CCF;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+}
+
+.intro p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.intro span {
+    display: block;
 }
 
 .photo {
     display: flex;
     justify-content: center;
+    margin: 2rem 0;
 }
 
 .photo img {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 10rem;
     height: 11rem;
 }
 
-/* img {
-    margin: 0 auto;
-} */
+img {
+    
+}
 
 .robert {
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 0.5em;
     filter: grayscale(90%);
     filter: opacity(70%);
     /* margin: 0 auto; */
 }
+
+.hover {
+    display: none;
+}
+
+.bounce {
+    margin: 0 auto;
+}
+
+i {
+    font-weight: 900;
+    color: #337CCF;
+    /* animation-name: bounce; */
+}
+
+.icon-large {
+    font-size: 1.5rem;
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-6px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+  }
+  
+  /* Apply the bounce animation to the icon */
+.animated-bounce {
+    animation: bounce 1s infinite;
+    transform-origin: bottom;
+    animation-timing-function: ease;
+}
+  
 
 .projects {
     height: 300px;
@@ -206,6 +278,14 @@ main div {
     ul.open {
         /* border: 2px solid gold; */
         display: flex;
+    }
+
+    .click {
+        display: none;
+    }
+
+    .hover {
+        display: block;
     }
 }
 
@@ -298,10 +378,15 @@ main div {
 
     .hello {
         display: flex;
+        flex-direction: row;
     }
 
     .intro {
-        flex-basis: 50%;
+        flex-basis: 60%;
+    }
+
+    .photo {
+        flex-basis: 40%;
     }
 
     .works {
