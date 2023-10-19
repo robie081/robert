@@ -117,7 +117,7 @@ ul.open {
 
 
 main {
-    border: 3px solid plum;
+    /* border: 3px solid plum; */
     display: flex;
     flex-direction: column;
     font-family: 'Karla', sans-serif;
@@ -130,14 +130,15 @@ main div {
 }
 
 .hello {
+    /* border: 2px solid lightblue; */
     display: flex;
     flex-direction: column;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .intro {
     /* background-color: #eff6ff; */
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 1rem;
     line-height: 1.8rem;
     
@@ -146,9 +147,9 @@ main div {
 
 .intro h1 {
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #337CCF;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 1rem 0;
 }
 
@@ -156,6 +157,7 @@ main div {
     font-size: 1.125rem;
     font-weight: 500;
     color: #374151;
+    margin-top: 1rem;
 }
 
 .intro span {
@@ -165,7 +167,7 @@ main div {
 .photo {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .photo img {
