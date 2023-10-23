@@ -17,6 +17,12 @@ btn.addEventListener('click', () => {
     ul.classList.toggle('open');
 });
 
+ul.addEventListener('click', () => {
+    header.classList.toggle('open');
+    ul.classList.toggle('open');
+});
+
+
 
 
 // // Vertical Bar in Front of Menu Items

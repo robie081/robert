@@ -109,12 +109,15 @@ header.open {
 }
 
 ul.open {
+    /* border: 2px solid blue; */
     /* right: 0; */
     display: block;
 }
 
-
-
+.active {
+    /* background-color: violet; */
+    /* display: none; */
+}
 
 main {
     /* border: 3px solid plum; */
@@ -139,15 +142,13 @@ main div {
 .intro {
     /* background-color: #eff6ff; */
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     line-height: 1.8rem;
-    
-    
 }
 
 .intro h1 {
     font-size: 1.75rem;
-    font-weight: 900;
+    font-weight: 800;
     color: #337CCF;
     letter-spacing: 1px;
     padding: 1rem 0;
@@ -172,8 +173,8 @@ main div {
 
 .photo img {
     /* border: 2px solid red; */
-    width: 10rem;
-    height: 11rem;
+    width: 13rem;
+    height: 14rem;
 }
 
 img {
@@ -204,6 +205,16 @@ i {
 
 .icon-large {
     font-size: 1.5rem;
+}
+
+.click {
+    /* border: 2px solid red; */
+    margin: 2rem  2rem 2rem 5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #337CCF;
 }
 
 /* Define the bounce animation */
