@@ -17,13 +17,33 @@ btn.addEventListener('click', () => {
     ul.classList.toggle('open');
 });
 
-ul.addEventListener('click', () => {
-    header.classList.toggle('open');
-    ul.classList.toggle('open');
+// List Toggle 1
+
+// ul.addEventListener('click', () => {
+//     btn.classList.toggle('change');
+//     header.classList.toggle('open');
+//     ul.classList.toggle('open');
+// });
+
+// List Toggle 2
+
+const listItems = document.querySelectorAll('ul li');
+// console.log(listItems);
+listItems.forEach((item, index) => {
+    item.addEventListener('click', e => {
+        // e.preventDefault();
+        // console.log(listItems[index]);
+        btn.classList.toggle('change');
+        header.classList.toggle('open');
+        ul.classList.toggle('open');
+    })
 });
 
+// location.reload();
 
-
+// window.addEventListener('reload', () => {
+//     window.location = 'http://127.0.0.1:5500/robert/index.html';
+// });
 
 // // Vertical Bar in Front of Menu Items
 
@@ -47,8 +67,8 @@ ul.addEventListener('click', () => {
 //   });
 // });
 
-// Sticky Menu GPT
 
+// Sticky Menu GPT
 // Sticky Menu
 
 // window.onscroll = function() {
