@@ -39,10 +39,42 @@ listItems.forEach((item, index) => {
     })
 });
 
-// location.reload();
+// Main
 
-// window.addEventListener('reload', () => {
-//     window.location = 'http://127.0.0.1:5500/robert/index.html';
+const buttons = document.querySelector('.buttons');
+
+const time = document.querySelector('.time');
+// time.addEventListener('click', () => {
+//     console.log('time click');
+//     // time.classList.toggle('opacity');
+//     // buttons.style.opacity = '1';
+//     time.style.opacity = '0.5';
+//     time.addEventListener('click', () => {
+//         console.log('time click 2');
+//         time.style.opacity = '1';
+//     });
+// });
+
+let opacity = 0.8;
+
+time.addEventListener('click', () => {
+    
+    if (opacity === 0.8) {
+        time.style.opacity = '1';
+        buttons.style.opacity = '1';
+        opacity = 1;
+    } else {
+        time.style.opacity = '0.8';
+        buttons.style.opacity = '0';
+        opacity = 0.8;
+    }
+        
+});
+
+
+// const myBody = document.querySelector('body');
+// myBody.addEventListener('click', () => {
+//     time.style.opacity = '1';
 // });
 
 // // Vertical Bar in Front of Menu Items
