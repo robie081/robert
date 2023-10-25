@@ -51,7 +51,7 @@ nav {
 .btn div {
     height: 4px;
     /* background: #1450A3; */
-    background: #337CCF;
+    background-color: #337CCF;
     margin: 4px auto;
     border-radius: 4px;
     transition: all 0.3s;
@@ -60,18 +60,18 @@ nav {
 .change .one {
     transform: rotate(45deg) translate(5px, 4px);
     /* background-color: white; */
-    background-color: #337CCF;
+    /* background-color: #337CCF; */
 }
 
 .change .two {
     opacity: 0;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .change .three {
     transform: rotate(-45deg) translate(7px, -7px);
     /* background-color: white; */
-    background-color: #337CCF;
+    /* background-color: #337CCF; */
 }
 
 ul {
@@ -173,8 +173,8 @@ main div {
 
 .photo img {
     /* border: 2px solid red; */
-    width: 13rem;
-    height: 14rem;
+    width: 12rem;
+    height: 13rem;
 }
 
 img {
