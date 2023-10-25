@@ -64,12 +64,14 @@ let opacity = 0.8;
 const opacityOn = () => {
     if (opacity === 0.8) {
         time.style.opacity = '1';
-        buttons.style.opacity = '1';
+        // buttons.style.display = 'block';
+        buttons.style.visibility = 'visible';
         text.style.opacity = '1';
         opacity = 1;
     } else {
         time.style.opacity = '0.8';
-        buttons.style.opacity = '0';
+        // buttons.style.display = 'none';
+        buttons.style.visibility = 'hidden';
         text.style.opacity = '0';
         opacity = 0.8;
     } 
