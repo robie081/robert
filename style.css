@@ -287,9 +287,9 @@ i {
     font-size: 1.0625rem;
 }
 
-button {
+/* button {
     all: unset;
-}
+} */
 
 .bttn {
     text-decoration: none;
@@ -307,10 +307,15 @@ button {
     margin-left: 1rem;
 } */
 
-.bttn:hover {
-    background-color: whitesmoke;
-    color: #337CCF;
+@media (hover:hover) {
+
+    .bttn:hover {
+        background-color: whitesmoke;
+        color: #337CCF;
+    }
 }
+
+
 
 @media only screen and (orientation: landscape) {
     

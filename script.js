@@ -76,6 +76,7 @@ const opacityOn = () => {
 }
 
 time.addEventListener('click', opacityOn);
+buttons.addEventListener('click', opacityOn);
 
 
 // const myBody = document.querySelector('body');
