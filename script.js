@@ -41,35 +41,41 @@ listItems.forEach((item, index) => {
 
 // Main
 
-const buttons = document.querySelector('.buttons');
-
 const time = document.querySelector('.time');
-// time.addEventListener('click', () => {
-//     console.log('time click');
-//     // time.classList.toggle('opacity');
-//     // buttons.style.opacity = '1';
-//     time.style.opacity = '0.5';
-//     time.addEventListener('click', () => {
-//         console.log('time click 2');
-//         time.style.opacity = '1';
-//     });
-// });
+const buttons = document.querySelector('.buttons');
+const text = document.querySelector('.text');
+
 
 let opacity = 0.8;
 
-time.addEventListener('click', () => {
+// time.addEventListener('click', () => {
     
+//     if (opacity === 0.8) {
+//         time.style.opacity = '1';
+//         buttons.style.opacity = '1';
+//         opacity = 1;
+//     } else {
+//         time.style.opacity = '0.8';
+//         buttons.style.opacity = '0';
+//         opacity = 0.8;
+//     }      
+// });
+
+const opacityOn = () => {
     if (opacity === 0.8) {
         time.style.opacity = '1';
         buttons.style.opacity = '1';
+        text.style.opacity = '1';
         opacity = 1;
     } else {
         time.style.opacity = '0.8';
         buttons.style.opacity = '0';
+        text.style.opacity = '0';
         opacity = 0.8;
-    }
-        
-});
+    } 
+}
+
+time.addEventListener('click', opacityOn);
 
 
 // const myBody = document.querySelector('body');

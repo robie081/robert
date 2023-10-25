@@ -257,19 +257,59 @@ i {
 }
 
 #timeless {
+    /* border: 2px solid red; */
     font-family: 'Dancing Script';
     font-weight: 600;
     font-size: 2.2rem;
     letter-spacing: 2px;
     /* opacity: 0.8; */
+    margin: 1rem;
+    
 }
 
 /* .opacity {
     opacity: 0.5;
 } */
 
-.buttons {
+.buttons, .text {
+    /* border: 2px solid red; */
     opacity: 0;
+    margin: 2rem;
+}
+
+.text {
+    width: 60%;
+}
+
+.text p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.0625rem;
+}
+
+button {
+    all: unset;
+}
+
+.bttn {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #0ea5e9;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
+
+/* .indent {
+    margin-left: 1rem;
+} */
+
+.bttn:hover {
+    background-color: whitesmoke;
+    color: #337CCF;
 }
 
 @media only screen and (orientation: landscape) {
