@@ -238,6 +238,7 @@ i {
     animation-timing-function: ease;
 }
   
+/* Timeless Wisdom Section */
 
 .projects {
     display: flex;
@@ -270,21 +271,21 @@ i {
     opacity: 0.5;
 } */
 
-.buttons {
+.buttons, .buttonsWit {
     /* border: 2px solid red; */
     /* display: none; */
     visibility: hidden;
     margin-bottom: 1rem;
 }
 
-.text {
+.text, .textWit {
     /* border: 2px solid red; */
     opacity: 0;
     width: 60%;
     margin: 0 0 3rem 0;
 }
 
-.text p {
+.text p, .textWit p {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 1.0625rem;
@@ -294,7 +295,7 @@ i {
     all: unset;
 } */
 
-.bttn {
+.bttn, .bttnWit {
     text-decoration: none;
     cursor: pointer;
     background-color: #0ea5e9;
@@ -309,6 +310,27 @@ i {
 /* .indent {
     margin-left: 1rem;
 } */
+
+/* Wit Section */
+
+.projects.wit {
+    background-color: #fed7aa;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#witty {
+    border: 3px solid purple;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 0 0 4.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    letter-spacing: 5px;
+}
+
+
 
 @media (hover:hover) {
 

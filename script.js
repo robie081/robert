@@ -40,26 +40,13 @@ listItems.forEach((item, index) => {
 });
 
 // Main
+// Timeless Wisdom Section
 
 const time = document.querySelector('.time');
 const buttons = document.querySelector('.buttons');
 const text = document.querySelector('.text');
 
-
 let opacity = 0.8;
-
-// time.addEventListener('click', () => {
-    
-//     if (opacity === 0.8) {
-//         time.style.opacity = '1';
-//         buttons.style.opacity = '1';
-//         opacity = 1;
-//     } else {
-//         time.style.opacity = '0.8';
-//         buttons.style.opacity = '0';
-//         opacity = 0.8;
-//     }      
-// });
 
 const opacityOn = () => {
     if (opacity === 0.8) {
@@ -80,6 +67,34 @@ const opacityOn = () => {
 time.addEventListener('click', opacityOn);
 buttons.addEventListener('click', opacityOn);
 
+
+// Wit Section
+
+const wit = document.querySelector('.wit');
+const buttonsWit = document.querySelector('.buttonsWit');
+const textWit = document.querySelector('.textWit');
+const times = document.querySelector('.times');
+
+const opacityWit = () => {
+    if (opacity === 0.8) {
+        wit.style.opacity = '1';
+        // buttons.style.display = 'block';
+        buttonsWit.style.visibility = 'visible';
+        textWit.style.opacity = '1';
+        opacity = 1;
+    } else {
+        wit.style.opacity = '0.8';
+        // buttons.style.display = 'none';
+        buttonsWit.style.visibility = 'hidden';
+        textWit.style.opacity = '0';
+        opacity = 0.8;
+    } 
+}
+
+wit.addEventListener('click', opacityWit);
+buttonsWit.addEventListener('click', opacityWit);
+
+// The Pain
 
 // const myBody = document.querySelector('body');
 // myBody.addEventListener('click', () => {
