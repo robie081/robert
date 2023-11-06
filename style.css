@@ -257,7 +257,7 @@ i {
     opacity: 0.8;
 }
 
-#timeless {
+#timeless, #witty {
     /* border: 2px solid red; */
     font-family: 'Dancing Script';
     font-weight: 600;
@@ -319,7 +319,7 @@ i {
     opacity: 0.8;
 }
 
-#witty {
+/* #witty {
     border: 3px solid purple;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -328,9 +328,17 @@ i {
     padding: 0.5rem;
     border-radius: 5px;
     letter-spacing: 5px;
+} */
+
+.aboutme h2, .toolkit h2 {
+    /* border: 2px solid plum; */
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #337CCF;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    padding: 1rem;
 }
-
-
 
 @media (hover:hover) {
 
