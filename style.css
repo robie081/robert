@@ -340,6 +340,14 @@ i {
     padding: 1rem;
 }
 
+.toolkit-items {
+    /* border: 2px solid plum; */
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
+}
+
 @media (hover:hover) {
 
     .bttn:hover {

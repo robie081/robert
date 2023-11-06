@@ -36,7 +36,7 @@ listItems.forEach((item, index) => {
         btn.classList.toggle('change');
         header.classList.toggle('open');
         ul.classList.toggle('open');
-    })
+    });
 });
 
 // Main
@@ -73,7 +73,6 @@ buttons.addEventListener('click', opacityOn);
 const wit = document.querySelector('.wit');
 const buttonsWit = document.querySelector('.buttonsWit');
 const textWit = document.querySelector('.textWit');
-const times = document.querySelector('.times');
 
 const opacityWit = () => {
     if (opacity === 0.8) {
@@ -93,6 +92,22 @@ const opacityWit = () => {
 
 wit.addEventListener('click', opacityWit);
 buttonsWit.addEventListener('click', opacityWit);
+
+
+// Iterate over Children of div
+
+// const clickProject = () => {
+//     const projectsTime = document.querySelector('.time');
+//     console.log(projectsTime);
+//     let divKids = projectsTime.children;
+//     console.log(divKids);
+
+//     for (let i = 0; i < divKids.length; i++) {
+//         console.log(divKids[i]);
+//     }
+// }
+// clickProject();
+
 
 // The Pain
 
