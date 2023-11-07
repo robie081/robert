@@ -139,7 +139,7 @@ main div {
     margin-bottom: 2rem;
 }
 
-.intro {
+.intro, .skill {
     /* background-color: #eff6ff; */
     margin: 1rem 0;
     padding: 0.5rem 1rem;
@@ -154,7 +154,7 @@ main div {
     padding: 1rem 0;
 }
 
-.intro p {
+.intro p, .skill p {
     font-size: 1.125rem;
     font-weight: 500;
     color: #374151;
@@ -330,7 +330,7 @@ i {
     letter-spacing: 5px;
 } */
 
-.aboutme h2, .toolkit h2 {
+.aboutme h2, .toolkit h2, .contact h2 {
     /* border: 2px solid plum; */
     font-size: 1.75rem;
     font-weight: 600;
@@ -340,12 +340,56 @@ i {
     padding: 1rem;
 }
 
+.toolkit {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
 .toolkit-items {
     /* border: 2px solid plum; */
     display: flex;
     justify-content: space-around;
-    margin: 2rem;
+    margin-top: 2rem;
     padding: 1rem;
+}
+
+.tool {
+    /* border: 2px solid plum; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool p {
+    font-family: "Nanum Pen Script", "cursive";
+    font-size: 1.25rem;
+    margin-top: 4px;
+}
+
+.skill {
+    /* border: 2px solid orange; */
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+}
+
+.skill a {
+    text-decoration: none;
+    color: #dc2626;
+}
+
+.skill a:hover {
+    cursor: pointer;
+    color: #f87171;
+}
+
+.codewars img {
+    position: relative;
+    bottom: -14px;
+}
+
+.contact {
+    background-color: #e0f2fe;
 }
 
 @media (hover:hover) {

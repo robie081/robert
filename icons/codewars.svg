@@ -1,0 +1,6 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 200 120">
+    <polygon points="50,50 150,50 175,100 150,150 50,150 25,100" fill="#424242" stroke="#fbbf24" stroke-width="5">
+    </polygon>
+    <text x="100" y="100" text-anchor="middle" alignment-baseline="middle" font-size="40" font-family="Arial" fill="#fbbf24">6 kyu</text>
+</svg> 
