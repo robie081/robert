@@ -344,6 +344,7 @@ i {
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .toolkit-items {
@@ -389,7 +390,55 @@ i {
 }
 
 .contact {
+    /* border: 2px solid black; */
     background-color: #e0f2fe;
+    padding-bottom: 4rem;
+}
+
+.social {
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.social p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #374151;
+    margin-top: 1rem;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.foot {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #0ea5e9;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+}
+
+.fun {
+    /* border: 2px solid white; */
+    font-family: "Nanum Pen Script", "cursive";
+    font-size: 1.5rem;
+    /* margin-top: 5px; */
+    position: relative;
+    top: 0.2rem;
 }
 
 @media (hover:hover) {
