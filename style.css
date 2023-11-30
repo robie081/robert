@@ -281,7 +281,7 @@ i {
 .text, .textWit {
     /* border: 2px solid red; */
     opacity: 0;
-    width: 60%;
+    width: 80%;
     margin: 0 0 3rem 0;
 }
 
@@ -443,7 +443,7 @@ i {
 
 @media (hover:hover) {
 
-    .bttn:hover {
+    .bttn:hover, .bttnWit:hover {
         background-color: whitesmoke;
         color: #337CCF;
     }
