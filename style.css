@@ -421,9 +421,9 @@ i {
 }
 
 .foot {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     background-color: #0ea5e9;
     color: white;
     text-align: center;
