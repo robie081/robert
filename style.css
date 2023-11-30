@@ -389,6 +389,12 @@ i {
     bottom: -14px;
 }
 
+/* Footer */
+
+footer {
+    font-family: 'Karla', sans-serif;
+}
+
 .contact {
     /* border: 2px solid black; */
     background-color: #e0f2fe;
@@ -428,7 +434,6 @@ i {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-family: 'Karla', sans-serif;
     font-weight: 600;
 }
 
@@ -451,8 +456,8 @@ i {
 
 
 
-@media only screen and (orientation: landscape) {
-    
+/* @media only screen and (orientation: landscape) */
+@media screen and (min-width: 640px) {
     /* Grid Mobile Landscape */
 
     /* body {
@@ -501,17 +506,46 @@ i {
         /* border: 2px solid gold; */
         display: flex;
     }
+}
 
-    .click {
-        display: none;
+@media screen and (min-width: 768px) {
+
+    /* Desktop Grid */
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr minmax(80%, 90%) 1fr;
+    } 
+    
+    header, nav, main {
+        grid-column: 2 / 3;
     }
 
-    .hover {
-        display: block;
+    footer {
+        grid-column: 1 / 4;
+    }
+
+    footer {
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #e0f2fe;
+    }
+
+    .contact {
+        /* padding-left: 2.7rem; */
+        width: 95%;
+    }
+
+    .foot {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 1024px) {
     
     /* Desktop Grid */
 
@@ -524,9 +558,9 @@ i {
         grid-column: 2 / 3;
     }
 
-    /* body {
-        background-color: lightgreen;
-    } */
+    body {
+        background-color: linen;
+    }
 
     header {
         padding: 3rem 0 3rem 0;
@@ -611,6 +645,14 @@ i {
         flex-basis: 40%;
     }
 
+    .click {
+        display: none;
+    }
+
+    .hover {
+        display: block;
+    }
+
     .works {
         display: flex;
         flex-flow: row wrap;
@@ -636,10 +678,22 @@ i {
 }
 
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1280px) {
     
+    /* Desktop Grid */
+
     body {
-        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 1fr minmax(70%, 80%) 1fr;
+    }
+    
+    header, nav, main, footer {
+        grid-column: 2 / 3;
+    }
+
+
+    body {
+        background-color: whitesmoke;
     }
 
     ul li {

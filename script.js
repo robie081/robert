@@ -93,6 +93,9 @@ const opacityWit = () => {
 wit.addEventListener('click', opacityWit);
 buttonsWit.addEventListener('click', opacityWit);
 
+// Desktop View
+
+
 
 // Iterate over Children of div
 
