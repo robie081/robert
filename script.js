@@ -1,97 +1,93 @@
 
-// Hamburger Toggle
+const robertLantus = () => {
 
-const btn = document.querySelector('.btn');
+    // Hamburger Toggle
 
-btn.addEventListener('click', () => {
-    btn.classList.toggle('change');
-});
+    const btn = document.querySelector('.btn');
 
-// Menu Toggle
-
-const header = document.querySelector('header');
-const ul = document.querySelector('ul');
-
-btn.addEventListener('click', () => {
-    header.classList.toggle('open');
-    ul.classList.toggle('open');
-});
-
-// List Toggle 1
-
-// ul.addEventListener('click', () => {
-//     btn.classList.toggle('change');
-//     header.classList.toggle('open');
-//     ul.classList.toggle('open');
-// });
-
-// List Toggle 2
-
-const listItems = document.querySelectorAll('ul li');
-// console.log(listItems);
-listItems.forEach((item, index) => {
-    item.addEventListener('click', e => {
-        // e.preventDefault();
-        // console.log(listItems[index]);
+    btn.addEventListener('click', () => {
         btn.classList.toggle('change');
+    });
+
+    // Menu Toggle
+
+    const header = document.querySelector('header');
+    const ul = document.querySelector('ul');
+
+    btn.addEventListener('click', () => {
         header.classList.toggle('open');
         ul.classList.toggle('open');
     });
-});
 
-// Main
-// Timeless Wisdom Section
+    // List Toggle 
 
-const time = document.querySelector('.time');
-const buttons = document.querySelector('.buttons');
-const text = document.querySelector('.text');
+    const listItems = document.querySelectorAll('ul li');
+    // console.log(listItems);
+    listItems.forEach((item, index) => {
+        item.addEventListener('click', e => {
+            // e.preventDefault();
+            // console.log(listItems[index]);
+            btn.classList.toggle('change');
+            header.classList.toggle('open');
+            ul.classList.toggle('open');
+        });
+    });
 
-let opacity = 0.8;
+    // Main
+    // Timeless Wisdom Section
 
-const opacityOn = () => {
-    if (opacity === 0.8) {
-        time.style.opacity = '1';
-        // buttons.style.display = 'block';
-        buttons.style.visibility = 'visible';
-        text.style.opacity = '1';
-        opacity = 1;
-    } else {
-        time.style.opacity = '0.8';
-        // buttons.style.display = 'none';
-        buttons.style.visibility = 'hidden';
-        text.style.opacity = '0';
-        opacity = 0.8;
-    } 
+    const time = document.querySelector('.time');
+    const buttons = document.querySelector('.buttons');
+    const text = document.querySelector('.text');
+
+    let opacity = 0.8;
+
+    const opacityOn = () => {
+        if (opacity === 0.8) {
+            time.style.opacity = '1';
+            buttons.style.visibility = 'visible';
+            text.style.opacity = '1';
+            opacity = 1;
+        } else {
+            time.style.opacity = '0.8';
+            buttons.style.visibility = 'hidden';
+            text.style.opacity = '0';
+            opacity = 0.8;
+        } 
+    }
+
+    time.addEventListener('click', opacityOn);
+    buttons.addEventListener('click', opacityOn);
+
+
+    // Wit Section
+
+    const wit = document.querySelector('.wit');
+    const buttonsWit = document.querySelector('.buttonsWit');
+    const textWit = document.querySelector('.textWit');
+
+    const opacityWit = () => {
+        if (opacity === 0.8) {
+            wit.style.opacity = '1';
+            buttonsWit.style.visibility = 'visible';
+            textWit.style.opacity = '1';
+            opacity = 1;
+        } else {
+            wit.style.opacity = '0.8';
+            buttonsWit.style.visibility = 'hidden';
+            textWit.style.opacity = '0';
+            opacity = 0.8;
+        } 
+    }
+
+    wit.addEventListener('click', opacityWit);
+    buttonsWit.addEventListener('click', opacityWit);
 }
 
-time.addEventListener('click', opacityOn);
-buttons.addEventListener('click', opacityOn);
+robertLantus();
 
 
-// Wit Section
 
-const wit = document.querySelector('.wit');
-const buttonsWit = document.querySelector('.buttonsWit');
-const textWit = document.querySelector('.textWit');
-
-const opacityWit = () => {
-    if (opacity === 0.8) {
-        wit.style.opacity = '1';
-        // buttons.style.display = 'block';
-        buttonsWit.style.visibility = 'visible';
-        textWit.style.opacity = '1';
-        opacity = 1;
-    } else {
-        wit.style.opacity = '0.8';
-        // buttons.style.display = 'none';
-        buttonsWit.style.visibility = 'hidden';
-        textWit.style.opacity = '0';
-        opacity = 0.8;
-    } 
-}
-
-wit.addEventListener('click', opacityWit);
-buttonsWit.addEventListener('click', opacityWit);
 
 // Desktop View
 
