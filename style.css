@@ -517,7 +517,7 @@ footer {
         grid-template-columns: 1fr minmax(80%, 90%) 1fr;
     } 
     
-    header, nav, main {
+    header, main {
         grid-column: 2 / 3;
     }
 
@@ -526,7 +526,6 @@ footer {
     }
 
     footer {
-        /* border: 2px solid black; */
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -535,7 +534,6 @@ footer {
     }
 
     .contact {
-        /* padding-left: 2.7rem; */
         width: 95%;
     }
 
@@ -554,12 +552,12 @@ footer {
         grid-template-columns: 1fr minmax(80%, 90%) 1fr;
     }
     
-    header, nav, main, footer {
+    header, main {
         grid-column: 2 / 3;
     }
 
-    body {
-        background-color: linen;
+    footer {
+        grid-column: 1 / 4;
     }
 
     header {
@@ -633,8 +631,11 @@ footer {
     /* Main */
 
     .hello {
+        /* border: 2px solid black; */
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .intro {
@@ -645,34 +646,19 @@ footer {
         flex-basis: 40%;
     }
 
-    .click {
-        display: none;
-    }
-
-    .hover {
-        display: block;
-    }
-
     .works {
+        /* border: 2px solid black; */
         display: flex;
         flex-flow: row wrap;
     }
 
     .projects.time {
-        flex-basis: 55%;
+        flex-basis: 45%;
         /* flex-grow: 1; */
     }
 
     .projects.wit {
         flex-basis: 45%;
-    }
-
-    .projects.prim {
-        flex-basis: 45%;
-    }
-
-    .projects.soon {
-        flex-basis: 55%;
     }
 
 }
@@ -687,21 +673,20 @@ footer {
         grid-template-columns: 1fr minmax(70%, 80%) 1fr;
     }
     
-    header, nav, main, footer {
+    header, main {
         grid-column: 2 / 3;
     }
 
-
-    body {
-        background-color: whitesmoke;
+    footer {
+        grid-column: 1 / 4;
     }
 
     ul li {
         margin: 0 3rem;
     }
 
-    .projects {
-        width: 500px;
+    .contact {
+        width: 90%;
     }
 }
 

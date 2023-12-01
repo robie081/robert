@@ -95,6 +95,8 @@ buttonsWit.addEventListener('click', opacityWit);
 
 // Desktop View
 
+// time.addEventListener('mouseover', opacityOn);
+// buttons.addEventListener('mouseover', opacityOn);
 
 
 // Iterate over Children of div
