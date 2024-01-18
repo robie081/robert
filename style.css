@@ -14,10 +14,10 @@ html {
 
 /* Grid Mobile Portrait */
 
-body {
+/* body {
     display: grid;
     grid-template-columns: 1fr;
-}
+} */
 
 body {
     /* border: 3px solid white; */
