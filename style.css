@@ -14,10 +14,10 @@ html {
 
 /* Grid Mobile Portrait */
 
-/* body {
+body {
     display: grid;
     grid-template-columns: 1fr;
-} */
+}
 
 body {
     /* border: 3px solid white; */
@@ -147,7 +147,6 @@ div.learn > p {
 }
 
 .tw, .samples {
-    
     font-weight: 600;
     color: #cbd5e1;
 }
@@ -166,10 +165,12 @@ div.learn > p {
 .samples {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
+    line-height: 1.56rem;
 }
 
 .presently {
     margin-top: 2rem;
+    line-height: 1.56rem;
 }
 
 .cv {
