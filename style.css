@@ -120,6 +120,7 @@ footer ul {
 }
 
 .web, .work {
+    /* border: 2px solid white; */
     font-family: 'Noto Serif', serif;
     /* font-family: 'Noto Sans', sans-serif; */
     font-weight: 600;
@@ -132,7 +133,13 @@ footer ul {
 
 .web {
     font-size: 4rem;
-    line-height: 6rem;
+    /* line-height: 6rem; */
+    margin-bottom: 2rem;
+}
+
+div.learn > p {
+    line-height: 1.56rem;
+    margin: 1rem 0;
 }
 
 .work {
@@ -153,6 +160,7 @@ footer ul {
     font-family: 'Dancing Script', serif;
     font-size: 1.8rem;
     letter-spacing: 2px;
+    margin: 0 8px;
 }
 
 .samples {
