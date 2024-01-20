@@ -192,10 +192,14 @@ div.samples a:hover {
     /* Grid Mobile Landscape */
 
     /* body {
-        border: 3px solid black;
+        border: 3px solid white;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     } */
+
+    body {
+        padding: 0 1rem;
+    }
 
     
 }
