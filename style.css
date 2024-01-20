@@ -37,7 +37,7 @@ header, main, footer {
 }
 
 header, footer {
-    /* border: 2px solid white; */
+    border: 2px solid white;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -66,7 +66,7 @@ a:hover {
 }
 
 i {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     font-size: 1.6rem;
     font-weight: 900;
     color: #f8fafc;
@@ -74,7 +74,7 @@ i {
 }
 
 ul li a {
-    /* border: 2px solid white; */
+    border: 2px solid white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -123,7 +123,7 @@ footer ul {
 }
 
 .web {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 6rem;
 }
 
