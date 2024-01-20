@@ -137,7 +137,7 @@ footer ul {
     margin-bottom: 2rem;
 }
 
-div.learn > p {
+div.learn > p, div.presently > p {
     line-height: 1.56rem;
     margin: 1rem 0;
 }
@@ -146,7 +146,7 @@ div.learn > p {
     font-size: 2.4rem;
 }
 
-.tw, .samples {
+.tw {
     font-weight: 600;
     color: #cbd5e1;
 }
@@ -166,11 +166,16 @@ div.learn > p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     line-height: 1.56rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
-.presently {
-    margin-top: 2rem;
-    line-height: 1.56rem;
+div.samples a {
+    color: #cbd5e1;
+}
+
+div.samples a:hover {
+    color: #e5e7eb;
 }
 
 .cv {
