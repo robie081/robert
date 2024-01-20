@@ -25,35 +25,37 @@ body {
     /* background-color: #64748b; */
     background-color: #020617;
     /* color: #f8fafc; */
-    line-height: 2rem;
+    /* line-height: 1.56rem; */
     font-size: 17px;
 
 }
 
 header, main, footer {
     /* border: 2px solid black; */
-    margin: 1rem 0.5rem;
-    padding: 1rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
 }
 
 header, footer {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-header ul {
+header ul, footer ul {
     /* border: 2px solid red; */
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: center; */
 }
 
-header ul li {
-    /* border: 2px solid red; */
+header ul li, footer ul li {
+    /* border: 2px solid orange; */
     display: flex;
     /* align-items: center;
     justify-content: center; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
 }
 
 a {
@@ -66,20 +68,21 @@ a:hover {
 }
 
 i {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     font-size: 1.6rem;
     font-weight: 900;
     color: #f8fafc;
-
+    
 }
 
 ul li a {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
     /* color: #d1d5db; */
     color: #f8fafc;
+    align-self: flex-end;
 }
 
 ul li a:hover, i:hover {
@@ -89,14 +92,19 @@ ul li a:hover, i:hover {
 li:first-child {
     /* flex: 1; */
     flex-basis: 80%;
+    /* width: 80%; */
 }
 
 li:nth-child(2) {
     flex-basis: 10%;
+    /* align-self: flex-end; */
+    /* width: 10%; */
 }
 
 li:last-child {
     flex-basis: 10%;
+    justify-content: center;
+    /* width: 10%; */
 }
 
 main {
