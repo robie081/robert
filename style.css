@@ -199,8 +199,16 @@ div.samples a:hover {
 
     body {
         padding: 0 1rem;
+        font-size: 18px;
     }
 
+    .web {
+        font-size: 5rem;
+    }
+
+    .work {
+        font-size: 2.8rem;
+    }
     
 }
 
@@ -213,15 +221,9 @@ div.samples a:hover {
         grid-template-columns: 1fr minmax(80%, 90%) 1fr;
     } 
     
-    header, main {
+    header, main, footer {
         grid-column: 2 / 3;
     }
-
-    footer {
-        grid-column: 1 / 4;
-    }
-
-    
 }
 
 
@@ -230,19 +232,13 @@ div.samples a:hover {
     /* Desktop Grid */
 
     body {
-        display: grid;
-        grid-template-columns: 1fr minmax(80%, 90%) 1fr;
+        /* display: grid; */
+        grid-template-columns: 1fr minmax(70%, 80%) 1fr;
     }
     
-    header, main {
+    /* header, main, footer {
         grid-column: 2 / 3;
-    }
-
-    footer {
-        grid-column: 1 / 4;
-    }
-
-    
+    } */
 }
 
 
@@ -251,25 +247,13 @@ div.samples a:hover {
     /* Desktop Grid */
 
     body {
-        display: grid;
-        grid-template-columns: 1fr minmax(70%, 80%) 1fr;
+        /* display: grid; */
+        grid-template-columns: 1fr minmax(60%, 70%) 1fr;
     }
     
-    header, main {
+    /* header, main, footer {
         grid-column: 2 / 3;
-    }
-
-    footer {
-        grid-column: 1 / 4;
-    }
-
-    ul li {
-        margin: 0 3rem;
-    }
-
-    .contact {
-        width: 90%;
-    }
+    } */
 }
 
 
