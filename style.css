@@ -39,12 +39,10 @@ body {
 }
 
 .home {
-    /* background-image: url('/experiment/warped-lines.jpg'); */
-    /* background-image: url('./warped-lines.jpg'); */
     background-image: url('./milky-way.jpg');
 }
 
-header, main, footer {
+header, main {
     /* border: 2px solid black; */
     margin: 1rem 0rem;
     padding: 0.5rem;
@@ -71,22 +69,12 @@ header ul li {
     /* align-items: flex-end; */
 }
 
-a {
-    text-decoration: none;
-    color: #6b7280;
-}
-
-a:hover {
-    color: #f8fafc;
-}
-
 i {
     /* border: 2px solid green; */
     font-size: 1.6rem;
     font-weight: 900;
     color: #f8fafc;
-    /* opacity: 1; */
-    background-color: #020617;
+    background-color: transparent;
 }
 
 ul li a {
@@ -101,6 +89,7 @@ ul li a {
     color: #f8fafc;
     align-self: flex-end;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 ul li a:hover, i:hover {
@@ -126,12 +115,13 @@ li:last-child {
 }
 
 main {
+    /* border: 2px solid white; */
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Nunito', sans-serif;
     /* font-family: 'Noto Sans', sans-serif; */
     color: #e5e7eb;
     /* color: #020617; */
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .web, .work {
@@ -152,30 +142,14 @@ main {
     margin-bottom: 2rem;
 }
 
-div.presently > p {
-    font-size: 18px;
-    line-height: 1.56rem;
-    margin: 1rem 0;
-}
-
 .work {
     font-size: 2.4rem;
 }
 
-.tw {
-    font-weight: 600;
-    color: #cbd5e1;
-}
-
-.tw:hover, .samples:hover {
-    color: #e5e7eb;
-}
-
-.tw {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    /* font-size: 1.8rem; */
-    /* letter-spacing: 2px; */
-    /* margin: 0 8px; */
+div.presently > p {
+    font-size: 1.125rem;
+    line-height: 1.56rem;
+    margin: 1rem 0;
 }
 
 .samples {
@@ -188,6 +162,7 @@ div.presently > p {
 
 div.samples a {
     color: #cbd5e1;
+    text-decoration: none;
 }
 
 div.samples a:hover {
