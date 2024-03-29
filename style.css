@@ -134,25 +134,16 @@ div.samples a {
 }
 
 div.samples a:hover {
-    color: #e5e7eb;
+    color: #f8fafc;
 }
 
 .samples p {
     padding: 4px 0;
 }
 
-
-
-
-/* @media only screen and (orientation: landscape) */
 @media screen and (min-width: 640px) {
-    /* Grid Mobile Landscape */
 
-    /* body {
-        border: 3px solid white;
-        display: grid;
-        grid-template-columns: 1fr;
-    } */
+    /* Grid Mobile Landscape */
 
     body {
         padding: 0 1rem;
@@ -183,8 +174,13 @@ div.samples a:hover {
         grid-template-columns: 1fr minmax(80%, 90%) 1fr;
     } 
     
-    header, main, footer {
+    header, main {
         grid-column: 2 / 3;
+    }
+
+    li:first-child {
+        /* border: 2px solid orange; */
+        flex-basis: 65%;
     }
 }
 
@@ -194,13 +190,26 @@ div.samples a:hover {
     /* Desktop Grid */
 
     body {
-        /* display: grid; */
-        grid-template-columns: 1fr minmax(60%, 70%) 1fr;
+        grid-template-columns: 1fr minmax(70%, 80%) 1fr;
     }
-    
-    /* header, main, footer {
-        grid-column: 2 / 3;
-    } */
+
+    li:first-child {
+        /* border: 2px solid orange; */
+        flex-basis: 60%;
+    }
+
+    header ul li a:hover {
+        transform: scale(1.1);
+    }
+
+    div.samples a {
+        display: inline-block;
+    }
+
+    div.samples a:hover {
+        transform: scale(1.02);
+        /* color: black; */
+    }
 }
 
 
@@ -209,18 +218,12 @@ div.samples a:hover {
     /* Desktop Grid */
 
     body {
-        /* display: grid; */
-        grid-template-columns: 1fr minmax(50%, 60%) 1fr;
+        grid-template-columns: 1fr minmax(60%, 70%) 1fr;
     }
 
     .home {
         background-image: url('./milky-way-desktop.jpg');
-        /* background-image: url('./warped-lines-desktop.jpg'); */
     }
-    
-    /* header, main, footer {
-        grid-column: 2 / 3;
-    } */
 }
 
 
