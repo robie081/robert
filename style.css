@@ -162,6 +162,11 @@ div.samples a:hover {
     .work {
         font-size: 2.8rem;
     }
+
+    li:first-child {
+        /* border: 2px solid orange; */
+        flex-basis: 75%;
+    }
     
 }
 
