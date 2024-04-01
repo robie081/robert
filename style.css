@@ -103,7 +103,7 @@ li:last-child {
 }
 
 main {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     color: #e5e7eb;
     margin: 3rem 0;
 }
@@ -126,11 +126,15 @@ main {
     font-size: 2.4rem;
 }
 
-div.presently > p {
+.path > p, .presently > p {
     /* border: 2px solid white; */
     font-family: "Nunito", sans-serif;
     font-size: 1.125rem;
     line-height: 1.56rem;
+}
+
+.presently > p {
+    /* margin-bottom: 3rem; */
 }
 
 .samples {
