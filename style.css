@@ -31,8 +31,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    height: 100vh;
+    /* height: 100vh; */
 }
+
+/* Preload background image */
+body::before {
+    content: "";
+    background-image: url('./milky-way-mobile.jpg');
+    display: none; /* Hide the element */
+}
+
 
 .home {
     /* background-image: url('./milky-way.jpg'); */
