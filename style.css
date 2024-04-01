@@ -33,7 +33,10 @@ body {
 }
 
 .home {
-    background-image: url('./milky-way.jpg');
+    /* background-image: url('./milky-way.jpg'); */
+    background-image: url('./milky-way-mobile.jpg');
+    /* background-image: url('./milky-way-mobile.webp'); */
+    /* background-image: url('./milky-way-mobile.png'); */
 }
 
 header {
