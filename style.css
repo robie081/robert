@@ -31,16 +31,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    /* height: 100vh; */
+    height: 100vh;
 }
-
-/* Preload background image */
-body::before {
-    content: "";
-    background-image: url('./milky-way-mobile.jpg');
-    display: none; /* Hide the element */
-}
-
 
 .home {
     /* background-image: url('./milky-way.jpg'); */
@@ -103,7 +95,7 @@ li:last-child {
 }
 
 main {
-    border: 2px solid green;
+    border: 2px solid orange;
     color: #e5e7eb;
     margin: 3rem 0;
 }
@@ -131,10 +123,6 @@ main {
     font-family: "Nunito", sans-serif;
     font-size: 1.125rem;
     line-height: 1.56rem;
-}
-
-.presently > p {
-    /* margin-bottom: 3rem; */
 }
 
 .samples {
