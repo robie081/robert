@@ -20,12 +20,13 @@ body {
 }
 
 body {
-    /* border: 3px solid white; */
+    border: 3px solid white;
     background-color: #020617;
     padding: 0 0.5rem 0 0.5rem;
 }
 
 body {
+    background-image: url('./milky-way-mobile.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -36,7 +37,7 @@ body {
 
 .home {
     /* background-image: url('./milky-way.jpg'); */
-    background-image: url('./milky-way-mobile.jpg');
+    /* background-image: url('./milky-way-mobile.jpg'); */
     /* background-image: url('./milky-way-mobile.webp'); */
     /* background-image: url('./milky-way-mobile.png'); */
 }
