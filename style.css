@@ -22,12 +22,11 @@ body {
 body {
     border: 3px solid white;
 
-    background-image: url('./background-destination-mobile.jpg');
-    /* background-image: url('./milky-way-mobile.jpg'); */
+    background-image: url('./milky-way-mobile.jpg');
     /* background-image: url('./milky-way-mobile.webp'); */
     /* background-image: url('./milky-way-mobile.png'); */
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
