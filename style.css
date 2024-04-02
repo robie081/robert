@@ -121,16 +121,17 @@ main {
 }
 
 .samples {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
     line-height: 1.56rem;
     font-weight: 600;
     margin-bottom: 2.6rem;
 }
 
-div.samples a {
+.samples a {
     color: #cbd5e1;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 div.samples a:hover {
