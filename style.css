@@ -150,11 +150,6 @@ div.samples a:hover {
         font-size: 18px;
     }
 
-    body {
-        /* background-position: center; */
-        /* background-attachment: fixed; */
-    }
-
     .web {
         font-size: 5rem;
     }
@@ -164,7 +159,6 @@ div.samples a:hover {
     }
 
     li:first-child {
-        /* border: 2px solid orange; */
         flex-basis: 75%;
     }
     
@@ -180,7 +174,7 @@ div.samples a:hover {
     } 
 
     body {
-        background-image: url('./milky-way-original.jpg');
+        background-image: url('./milky-way-tablet.jpg');
     }
     
     header, main {
@@ -188,7 +182,6 @@ div.samples a:hover {
     }
 
     li:first-child {
-        /* border: 2px solid orange; */
         flex-basis: 65%;
     }
 }
@@ -207,7 +200,6 @@ div.samples a:hover {
     }
 
     li:first-child {
-        /* border: 2px solid orange; */
         flex-basis: 60%;
     }
 
@@ -221,22 +213,15 @@ div.samples a:hover {
 
     div.samples a:hover {
         transform: scale(1.02);
-        /* color: black; */
     }
 }
 
 
 @media screen and (min-width: 1280px) {
-    
-    /* Desktop Grid */
 
     body {
         grid-template-columns: 1fr minmax(60%, 70%) 1fr;
     }
-
-    /* body {
-        background-image: url('./milky-way-desktop.jpg');
-    } */
 }
 
 
