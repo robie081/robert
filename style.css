@@ -20,13 +20,13 @@ body {
 }
 
 body {
-    border: 3px solid white;
+    /* border: 3px solid white; */
 
     background-image: url('./milky-way-mobile.jpg');
     /* background-image: url('./milky-way-mobile.webp'); */
     /* background-image: url('./milky-way-mobile.png'); */
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
 
@@ -90,7 +90,7 @@ li:last-child {
 }
 
 main {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     color: #e5e7eb;
     margin: 3rem 0;
 }
@@ -113,7 +113,7 @@ main {
     font-size: 2.4rem;
 }
 
-.path > p, .presently > p {
+.presently > p {
     /* border: 2px solid white; */
     font-family: "Nunito", sans-serif;
     font-size: 1.125rem;
@@ -151,8 +151,8 @@ div.samples a:hover {
     }
 
     body {
-        background-position: center;
-        background-attachment: fixed;
+        /* background-position: center; */
+        /* background-attachment: fixed; */
     }
 
     .web {
@@ -178,6 +178,10 @@ div.samples a:hover {
         display: grid;
         grid-template-columns: 1fr minmax(80%, 90%) 1fr;
     } 
+
+    body {
+        background-image: url('./milky-way-original.jpg');
+    }
     
     header, main {
         grid-column: 2 / 3;
@@ -196,6 +200,10 @@ div.samples a:hover {
 
     body {
         grid-template-columns: 1fr minmax(70%, 80%) 1fr;
+    }
+
+    body {
+        background-image: url('./milky-way-desktop.jpg');
     }
 
     li:first-child {
@@ -226,9 +234,9 @@ div.samples a:hover {
         grid-template-columns: 1fr minmax(60%, 70%) 1fr;
     }
 
-    .home {
+    /* body {
         background-image: url('./milky-way-desktop.jpg');
-    }
+    } */
 }
 
 
