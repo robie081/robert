@@ -161,6 +161,10 @@ div.samples a:hover {
     li:first-child {
         flex-basis: 75%;
     }
+
+    li:last-child {
+        justify-content: left;
+    }
     
 }
 
