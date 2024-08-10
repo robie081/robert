@@ -1,14 +1,11 @@
 
-/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Lusitana&display=swap'); */
 
 * {
     -webkit-box-sizing: border-box;
@@ -17,7 +14,6 @@
 }
 
 html {
-    /* border: 2px solid orange; */
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -32,11 +28,8 @@ body {
 }
 
 body {
-    /* border: 2px solid orange; */
-    /* background-color: #f9fafb; */
     overflow-x: hidden;
     margin-block: 1rem;
-    /* margin-inline: .5rem; */
     background-color: #0f0d0e;
     color: #f9f4da;
 }
@@ -44,46 +37,23 @@ body {
 /* About -- Header */
 
 .primary-header {
-    /* border: 2px solid plum; */
-    /* background-color: #f3f4f6; */
-    /* position: relative; */
-
     display: flex;
     justify-content: space-between;
-
     margin-inline: .5rem;
     padding: 1rem;
 }
 
-/* .logo img {
-    width: 70px;
-    height: 100px;
-    border-radius: 5px;
-} */
-
-/* .logo span {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    color: #1f2937;
-    letter-spacing: .5px;
-} */
-
 /* Hamburger */
 
 button {
-    /* display: block; */
-    /* position: fixed; */
-    margin: 0;
-    padding: 4px;
     background: none;
     border: none;
     text-decoration: none;
     appearance: none;
+    margin: 0;
+    padding: 4px;
     cursor: pointer;
-    /* z-index: 99; */
     height: 30px;
-
     align-self: center;
 }
 
@@ -94,8 +64,6 @@ button {
 .nav-hamburger-button-root {
     display: inline-flex;
     align-items: center;
-    /* padding: 4px; */
-    /* z-index: 99; */
 }
 
 .nav-hamburger-button-box {
@@ -110,7 +78,6 @@ button {
     display: block;
     width: 20px;
     height: 1px;
-    /* background-color: #000; */
     background-color: #f9f4da;
 
     position: absolute;
@@ -123,7 +90,6 @@ button {
     display: block;
     width: 20px;
     height: 1px;
-    /* background-color: #000; */
     background-color: #f9f4da;
     position: absolute;
 }
@@ -181,30 +147,24 @@ button {
 }
 
 .day-night {
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
 .light {
-    /* background-color: #0f0d0e; */
-    /* color: #f9f4da; */
-
     background-color: #f9fafb;
     color: #000;
 }
 
 nav {
-    /* border: 2px solid orange; */
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* background-color: #f7f7f7; */
     background-color: #0f0d0e;
-    /* color: #f9f4da; */
     transform: translateX(-100%);
     transition: transform .5s ease-in-out;
 }
@@ -220,8 +180,6 @@ nav.active {
 }
 
 .primary-navigation {
-    /* border: 2px solid lightgreen; */
-
     width: 100vw;
     height: 50vh;
 
@@ -236,7 +194,6 @@ ul {
 }
 
 ul li {
-    /* border: 2px solid lightblue; */
     padding: 1rem;
 }
 
@@ -249,19 +206,15 @@ ul li a {
     letter-spacing: 0.5px;
 }
 
-/* ul li a.light {
-    color: #000;
-} */
-
-.index.darky {
+.index.dark-color {
     color: #374151;
 }
 
-.poetry.darky {
+.poetry.dark-color {
     color: #374151;
 }
 
-.travel.darky {
+.travel.dark-color {
     color: #374151;
 }
 
@@ -290,7 +243,6 @@ main {
 }
 
 .about {
-    /* border: 2px solid powderblue; */
     font-family: "Nunito", sans-serif;
     font-size: 1.125rem;
     line-height: 1.56rem;
@@ -309,15 +261,10 @@ main {
 }
 
 .samples a {
-    /* color: #cbd5e1; */
     color: #6b7280;
     text-decoration: none;
     letter-spacing: 1px;
 }
-
-/* div.samples a:hover {
-    color: #f8fafc;
-} */
 
 .samples p {
     margin-inline: 2.5rem;
@@ -332,32 +279,27 @@ main {
 }
 
 .social-icons ul {
-    /* border: 2px solid orange; */
     display: flex;
-    /* justify-content: space-evenly; */
     justify-content: center;
-    /* width: 25vw; */
 }
 
 .social-icons ul li a {
-    /* color: #374151; */
     font-size: 24px;
     color: #f9f4da;
     margin: 1rem;
 }
 
-.linkedin.darky {
+.linkedin.dark-color {
     color: #374151;
 }
 
-.github.darky {
+.github.dark-color {
     color: #374151;
 }
 
 /* Poetry, Travel */
 
 .menu-items {
-    /* border: 2px solid orange; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -368,7 +310,6 @@ main {
 }
 
 .menu-items div {
-    /* border: 2px solid plum; */
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -377,7 +318,6 @@ main {
 }
 
 .menu-items div a {
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
     font-weight: 400;
@@ -399,11 +339,6 @@ main {
     aspect-ratio: 1;
 }
 
-/* .logar {
-    width: 100%;
-    height: auto;
-} */
-
 /* Bukowski */
 
 .main-section {
@@ -412,7 +347,6 @@ main {
 }
 
 .sans-serif p {
-    /* border: 1px solid white; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
     line-height: 1.5;
@@ -433,16 +367,12 @@ main {
 .main-section .serif h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
-    /* font-family: 'EB Garamond', serif;
-    font-size: 22px; */
     margin-bottom: 2rem;
 }
 
 .main-section .serif p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
-    /* font-family: 'EB Garamond', serif;
-    font-size: 18px; */
     word-break: break-word;
     line-height: 1.33;
 }
@@ -451,14 +381,12 @@ main {
 /* Slovenia */
 
 .picture-explanation {
-    /* border: 1px solid #f9fafb; */
     font-family: monospace;
     margin-inline-start: 1rem;
     margin-block-end: 1rem;
 }
 
 .main-section div img.slovenia {
-    /* border: 2px solid plum; */
     margin-block-end: 4px;
 }
 
@@ -467,24 +395,13 @@ main {
     /* Grid Mobile Landscape */
 
     body {
-        /* border: 2px solid red; */
         padding-inline: 2rem;
     }
 
     .primary-navigation {
-        /* border: 2px solid powderblue; */
-    
         width: 50vw;
-        /* height: 50vh; */
-    
-        /* display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end; */
-    
         position: absolute;
         top: 15vh;
-        /* left: 10vw; */
     }
 
     nav {
@@ -498,6 +415,25 @@ main {
         display: grid;
         grid-template-columns: 1fr minmax(90%, 95%) 1fr;
     } 
+
+    .flex-items.mobile-landscape {
+        display: flex;
+    }
+
+    .reverse.mobile-landscape {
+        flex-direction: row-reverse;
+    }
+
+    .flex-items.mobile-landscape img, .flex-items.mobile-landscape picture {
+        flex-basis: 5%;
+    }
+
+    .flex-items.mobile-landscape .sans-serif {
+        flex-basis: 95%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 2rem;
+    }
 
     header, main, footer {
         grid-column: 2 / 3;

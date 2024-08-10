@@ -95,7 +95,7 @@ dayNight.addEventListener('click', () => {
 
     for (let item of li) {
         let a = item.getElementsByTagName('a')[0];
-        a.classList.toggle('darky');
+        a.classList.toggle('dark-color');
     }
 
     nav.classList.toggle('light');
@@ -103,7 +103,7 @@ dayNight.addEventListener('click', () => {
     for (let item of menuLi) {
         let menuItem = item.getElementsByTagName('a')[0];
         // console.log(menuItem);
-        menuItem.classList.toggle('darky');
+        menuItem.classList.toggle('dark-color');
     }
 
 });
