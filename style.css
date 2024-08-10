@@ -504,14 +504,6 @@ main {
     .nav-hamburger-button-inner.isExpanded.isHovered::after {
         background-color: #f87171;
     }
-
-    /* #sol-svg:hover {
-        fill: gray;
-    } */
-
-    /* .isHoveredSvg {
-        fill: gray;
-    } */
 }
 
 @media (min-width: 1156px) {
