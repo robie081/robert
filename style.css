@@ -407,6 +407,10 @@ main {
     nav {
         width: 50vw;
     }
+
+    .picture-landscape {
+        padding-inline: .5rem;
+    }
 }
 
 @media (min-width: 640px) {
@@ -468,6 +472,10 @@ main {
         display: flex;
         flex-direction: column;
         padding: 0 0 0 2rem;
+    }
+
+    .picture-landscape {
+        padding-inline: 0;
     }
 }
 
