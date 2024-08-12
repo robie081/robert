@@ -1,109 +1,95 @@
 
-const hamburgerButton = document.querySelector('.nav-hamburger-button-root');
-const hamburger = document.querySelector('.nav-hamburger-button-inner');
+function main() {
 
-// const primaryNav = document.querySelector('.primary-navigation');
-const nav = document.querySelector('nav');
-// const body = document.body;
-const body = document.querySelector('body');
-const main = document.querySelector('main');
+    const hamburgerButton = document.querySelector('.nav-hamburger-button-root');
+    const hamburger = document.querySelector('.nav-hamburger-button-inner');
 
-// console.log(hamburger);
-hamburgerButton.addEventListener('click', () => {
+    // const body = document.body;
+    const body = document.querySelector('body');
+    const nav = document.querySelector('nav');
+    const main = document.querySelector('main');
 
-    hamburger.classList.toggle('isExpanded');
-    
-    // console.log('isExpanded');
+    hamburgerButton.addEventListener('click', () => {
 
-    // No scroll for cross when menu is open
+        hamburger.classList.toggle('isExpanded');
+        // console.log('isExpanded');
 
-    if (hamburger.classList.contains('isExpanded')) {
-        body.classList.add('no-scroll');
-    } else {
+        // No scroll for cross when menu is open
+
+        if (hamburger.classList.contains('isExpanded')) {
+            body.classList.add('no-scroll');
+        } else {
+            body.classList.remove('no-scroll');
+        }
+    });
+
+    // Remove menu on click of main
+
+    main.addEventListener('click', () => {
+
+        hamburger.classList.remove('isExpanded');
+        nav.classList.remove('active');
         body.classList.remove('no-scroll');
-    }
-});
+    });
 
-// Remove menu on click of main
+    // Precious -- Hover over pseudo elements like ::after and ::before
 
-main.addEventListener('click', () => {
+    hamburgerButton.addEventListener('mouseover', () => {
+        // hamburger.classList.toggle('isHovered');
+        hamburger.classList.add('isHovered');
+        // console.log('mouse over');
+    });
 
-    hamburger.classList.remove('isExpanded');
-    nav.classList.remove('active');
-    body.classList.remove('no-scroll');
-});
+    hamburgerButton.addEventListener('mouseout', () => {
+        // hamburger.classList.toggle('isHovered');
+        hamburger.classList.remove('isHovered');
+        // console.log('mouse out');
+    });
 
-// body.addEventListener('click', () => {
-//     hamburger.classList.remove('isExpanded');
-// });
+    hamburgerButton.addEventListener('click', () => {
+        // primaryNav.classList.toggle('active');
+        nav.classList.toggle('active');
 
-// Precious -- Hover over pseudo elements like ::after and ::before
+    });
 
-hamburgerButton.addEventListener('mouseover', () => {
-    // hamburger.classList.toggle('isHovered');
-    hamburger.classList.add('isHovered');
-    // console.log('mouse over');
-});
+    const dayNight = document.querySelector('.day-night');
 
-hamburgerButton.addEventListener('mouseout', () => {
-    // hamburger.classList.toggle('isHovered');
-    hamburger.classList.remove('isHovered');
-    // console.log('mouse out');
-});
+    const solSvg = document.getElementById('sol-svg');
 
-hamburgerButton.addEventListener('click', () => {
+    const ul = document.getElementById('social');
+    // console.log(ul);
+    const li = ul.querySelectorAll('.social');
+    // console.log(li);
 
-    // primaryNav.classList.toggle('active');
-    nav.classList.toggle('active');
+    const menuUl = document.querySelector('.primary-navigation');
+    const menuLi = menuUl.querySelectorAll('.color');
 
-});
+    dayNight.addEventListener('click', () => {
+        body.classList.toggle('light');
+        hamburger.classList.toggle('dark');
 
-const dayNight = document.querySelector('.day-night');
+        // console.log(solSvg.style.fill);
 
-const solSvg = document.getElementById('sol-svg');
+        if (solSvg.style.fill === '') {
+            // solSvg.style.fill = '#f9f4da';
+            solSvg.style.fill = '#111827';
+        } else {
+            solSvg.style.fill = '';
+        }
 
-const ul = document.getElementById('social');
-// console.log(ul);
-const li = ul.querySelectorAll('.social');
-// console.log(li);
+        for (let item of li) {
+            let a = item.getElementsByTagName('a')[0];
+            a.classList.toggle('dark-color');
+        }
 
-const menuUl = document.querySelector('.primary-navigation');
-const menuLi = menuUl.querySelectorAll('.color');
+        nav.classList.toggle('light');
 
+        for (let item of menuLi) {
+            let menuItem = item.getElementsByTagName('a')[0];
+            // console.log(menuItem);
+            menuItem.classList.toggle('dark-color');
+        }
+    });
+}
 
-
-dayNight.addEventListener('click', () => {
-    body.classList.toggle('light');
-    hamburger.classList.toggle('dark');
-
-    // console.log(solSvg.style.fill);
-
-    if (solSvg.style.fill === '') {
-        // solSvg.style.fill = '#f9f4da';
-        solSvg.style.fill = '#111827';
-    } else {
-        solSvg.style.fill = '';
-    }
-    
-    // linkedin.classList.toggle('darky');
-    // github.classList.toggle('darky');
-
-    // li.forEach(item => {
-    //     let a = item.getElementsByTagName('a')[0];
-    //     a.classList.toggle('darky');
-    // });
-
-    for (let item of li) {
-        let a = item.getElementsByTagName('a')[0];
-        a.classList.toggle('dark-color');
-    }
-
-    nav.classList.toggle('light');
-
-    for (let item of menuLi) {
-        let menuItem = item.getElementsByTagName('a')[0];
-        // console.log(menuItem);
-        menuItem.classList.toggle('dark-color');
-    }
-
-});
+main();
